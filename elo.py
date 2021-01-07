@@ -20,4 +20,4 @@ if diff > 0:
 else:
     diff = str(diff)
 
-print("new rating: " + str(round(newRatingA)) + ": " + diff)
+print("new rating: " + str(round(newRatingA)) + " -  " + diff)
