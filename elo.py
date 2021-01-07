@@ -7,7 +7,7 @@ if winner == "win":
 elif winner == "lose":
     winner = 0
 
-probability = 1 / (1 + 10 ** ((int(ratingB) - int(ratingA)) / 400))
+probability = 1 / (1 + 10 ** (ratingB - ratingA / 400))
 
 print("probability of you winning: " + str(round(probability, 3)))
 
@@ -20,4 +20,4 @@ if diff > 0:
 else:
     diff = str(diff)
 
-print("new rating: " + str(round(newRatingA)) + ", " + diff)
+print("Your new rating: " + str(round(newRatingA)) + ", " + diff)
